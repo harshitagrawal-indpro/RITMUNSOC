@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
@@ -16,11 +15,9 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4 reveal-scale">
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/28e42789-83a6-4394-b5a3-83204b5afde8.png" 
-                  alt="MUNSOC RIT Logo" 
-                  className="h-10 w-10 float transition-transform duration-500 hover:scale-110"
-                />
+                <div className="h-10 w-10 bg-gradient-to-br from-munsoc-teal-500 to-munsoc-gold-500 rounded-full flex items-center justify-center text-lg font-bold text-white shadow-lg float transition-transform duration-500 hover:scale-110">
+                  🏛️
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-munsoc-teal-400 to-munsoc-gold-400 rounded-full opacity-20 blur-lg animate-pulse"></div>
               </div>
               <span className="text-xl font-bold munsoc-text-gradient">MUNSOC RIT</span>

@@ -1,22 +1,25 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 const president = {
-  name: "Sarah Johnson",
+  name: "Ryan Gomez",
   position: "President",
-  image: "/placeholder.svg",
-  bio: "Leading MUNSOC RIT with vision and diplomatic excellence.",
-  achievements: ["Model UN Champion 2023", "Best Delegate Award"]
+  image: "https://i.ibb.co/SXVgR9y6/image.png",
+  bio: "Leading MUNSOC RIT with vision and diplomatic excellence, fostering global awareness and leadership development.",
+  achievements: ["Established MUNSOC RIT", "Diplomatic Leadership Excellence", "Global Affairs Expertise"]
 };
 
 const coreMembers = [
-  { name: "Alex Chen", position: "Vice President", image: "/placeholder.svg", specialization: "Crisis Management" },
-  { name: "Maria Rodriguez", position: "Secretary General", image: "/placeholder.svg", specialization: "Protocol & Procedures" },
-  { name: "David Kim", position: "Head of Logistics", image: "/placeholder.svg", specialization: "Event Coordination" },
-  { name: "Emma Thompson", position: "Public Relations", image: "/placeholder.svg", specialization: "Media & Communications" },
-  { name: "Ryan O'Connor", position: "Finance Director", image: "/placeholder.svg", specialization: "Budget Management" },
-  { name: "Priya Patel", position: "Academic Director", image: "/placeholder.svg", specialization: "Research & Training" },
-  { name: "James Wilson", position: "Technology Lead", image: "/placeholder.svg", specialization: "Digital Innovation" }
+  { name: "ShreeHari R Pillai", position: "Vice President", image: "https://i.ibb.co/fVD7pwXn/image.png", specialization: "Strategic Leadership & Operations" },
+  { name: "Devika", position: "Coordinator", image: "https://i.ibb.co/ksGr3jxz/image.png", specialization: "Program Coordination & Management" },
+  { name: "Manya Ravishankar", position: "Convener", image: "https://i.ibb.co/99s5JbsJ/image.png", specialization: "Event Organization & Assembly" },
+  { name: "Shiddharth Priyatam", position: "Head of PR Marketing", image: "https://i.ibb.co/WNZtVkhc/image.png", specialization: "Brand Strategy & Communications" },
+  { name: "Amogh Shastry", position: "Head of PR Marketing", image: "https://i.ibb.co/5gyTD8Vb/image.png", specialization: "Digital Marketing & Outreach" },
+  { name: "Aashitha", position: "Head of Design", image: "https://i.ibb.co/pr9RvjHS/image.png", specialization: "Visual Identity & Creative Direction" },
+  { name: "Vennela", position: "Event Management", image: "https://i.ibb.co/Zz6nCnzK/image.png", specialization: "Conference Planning & Execution" },
+  { name: "Angel", position: "Head of Design", image: "https://i.ibb.co/xtYfHGSY/image.png", specialization: "UI/UX Design & Graphics" },
+  { name: "Hamd", position: "Head of Delegation", image: "https://i.ibb.co/gLF0ZfpY/image.png", specialization: "Delegation Training & Support" },
+  { name: "Neesarg", position: "Head of Logistics", image: "https://i.ibb.co/FLGSj4x8/image.png", specialization: "Operations & Resource Management" },
+  { name: "Harshit Agrawal", position: "Head of IT", image: "https://i.ibb.co/GQtfp7vX/image.png", specialization: "Technology & Web Development" }
 ];
 
 export function Team() {
@@ -79,11 +82,13 @@ export function Team() {
             <p className="text-lg text-muted-foreground">The backbone of our organization</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coreMembers.map((member, index) => (
               <Card 
                 key={member.name} 
-                className={`group munsoc-glass hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-munsoc-teal-500/20 hover:border-munsoc-gold-500/30 reveal-scale stagger-${index + 3} cursor-pointer`}
+                className={`group munsoc-glass hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-munsoc-teal-500/20 hover:border-munsoc-gold-500/30 reveal-scale stagger-${(index % 8) + 3} cursor-pointer ${
+                  member.name === "Harshit Agrawal" ? "ring-2 ring-munsoc-gold-400/50" : ""
+                }`}
               >
                 <CardContent className="p-6 text-center">
                   <div className="relative mb-6 overflow-hidden rounded-full">
@@ -97,6 +102,9 @@ export function Team() {
                   
                   <h4 className="text-xl font-bold mb-2 text-white group-hover:text-munsoc-teal-300 transition-colors duration-300">{member.name}</h4>
                   <p className="text-munsoc-teal-400 dark:text-munsoc-teal-300 font-semibold mb-3 text-lg group-hover:text-munsoc-gold-400 transition-colors duration-300">{member.position}</p>
+                  {member.name === "Harshit Agrawal" && (
+                    <p className="text-xs text-munsoc-gold-400 font-semibold mb-2">✨ Website Creator ✨</p>
+                  )}
                   <div className="bg-munsoc-teal-900/30 dark:bg-munsoc-teal-900/40 rounded-lg p-3 group-hover:bg-munsoc-gold-900/30 transition-colors duration-300">
                     <p className="text-sm text-white/90 group-hover:text-white font-medium">{member.specialization}</p>
                   </div>

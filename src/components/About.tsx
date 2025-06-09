@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const objectives = [
@@ -42,8 +41,11 @@ export function About() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 munsoc-text-gradient">
             Our Objectives
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             MUNSOC RIT is committed to developing future leaders through immersive Model United Nations experiences
+          </p>
+          <p className="text-lg text-munsoc-teal-600 dark:text-munsoc-teal-400 font-semibold">
+            Ramaiah Institute of Technology
           </p>
         </div>
 
@@ -100,6 +102,10 @@ export function About() {
                   <span className="text-munsoc-teal-500 mr-3">📈</span>
                   Academic and career guidance
                 </li>
+                <li className="flex items-center">
+                  <span className="text-munsoc-teal-500 mr-3">🏆</span>
+                  Participation in RACHANA MUN and other conferences
+                </li>
               </ul>
             </div>
             <div className="reveal-up stagger-7">
@@ -128,7 +134,36 @@ export function About() {
                   <span className="text-munsoc-gold-500 mr-3">🤲</span>
                   Commitment to collaborative learning
                 </li>
+                <li className="flex items-center">
+                  <span className="text-munsoc-gold-500 mr-3">💬</span>
+                  Join our WhatsApp community for updates
+                </li>
               </ul>
+            </div>
+          </div>
+
+          {/* Call to Action with Social Links */}
+          <div className="text-center mt-12 pt-8 border-t border-white/20">
+            <h4 className="text-xl font-bold mb-6 munsoc-text-gradient">Ready to Join Us?</h4>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf7ZGFdkDBTFxt8O6IJGM4mfd3kWttjV9n5rsA-PkPgm95Wkw/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-munsoc-teal-600 to-munsoc-gold-600 text-white rounded-full hover:from-munsoc-teal-700 hover:to-munsoc-gold-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <span>📝</span>
+                <span className="font-semibold">Register for RACHANA MUN</span>
+              </a>
+              <a
+                href="https://chat.whatsapp.com/Gcv1rlofnHhBoOG3nmC3Oz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <span>💬</span>
+                <span className="font-semibold">Join WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

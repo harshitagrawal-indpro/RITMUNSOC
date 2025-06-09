@@ -1,4 +1,3 @@
-
 export function Footer() {
   return (
     <footer className="relative overflow-hidden munsoc-glass border-t border-white/20 py-16">
@@ -13,17 +12,15 @@ export function Footer() {
           <div className="col-span-2 reveal-up stagger-1">
             <div className="flex items-center space-x-4 mb-6">
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/28e42789-83a6-4394-b5a3-83204b5afde8.png" 
-                  alt="MUNSOC RIT Logo" 
-                  className="h-12 w-12 float"
-                />
+                <div className="h-12 w-12 bg-gradient-to-br from-munsoc-teal-500 to-munsoc-gold-500 rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-lg float">
+                  🏛️
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-munsoc-teal-400 to-munsoc-gold-400 rounded-full opacity-20 blur-lg"></div>
               </div>
               <span className="text-2xl font-bold munsoc-text-gradient">MUNSOC RIT</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
-              Rochester Institute of Technology's Model United Nations Society - 
+              Ramaiah Institute of Technology's Model United Nations Society - 
               fostering global awareness through diplomatic education and leadership development.
             </p>
             <p className="text-lg font-semibold munsoc-text-gradient">
@@ -64,22 +61,52 @@ export function Footer() {
 
           <div className="reveal-up stagger-3">
             <h3 className="font-bold mb-6 text-xl munsoc-text-gradient">Connect</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer">
-                <span className="text-lg mr-3">📧</span>
-                munsoc@rit.edu
+            <ul className="space-y-4 text-sm">
+              <li>
+                <a 
+                  href="mailto:munsoc@rit.edu"
+                  className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer group"
+                >
+                  <span className="text-lg mr-3 group-hover:scale-110 transition-transform">📧</span>
+                  munsoc@rit.edu
+                </a>
               </li>
-              <li className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer">
-                <span className="text-lg mr-3">📱</span>
-                Instagram: @munsoc_rit
+              <li>
+                <a 
+                  href="https://www.instagram.com/rit.munsoc/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer group"
+                >
+                  <span className="text-lg mr-3 group-hover:scale-110 transition-transform">📸</span>
+                  @rit.munsoc
+                </a>
               </li>
-              <li className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer">
-                <span className="text-lg mr-3">🐦</span>
-                Twitter: @MUNSOC_RIT
+              <li>
+                <a 
+                  href="https://www.linkedin.com/company/munsoc-rit/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer group"
+                >
+                  <span className="text-lg mr-3 group-hover:scale-110 transition-transform">💼</span>
+                  MUNSOC RIT
+                </a>
               </li>
-              <li className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer">
+              <li>
+                <a 
+                  href="https://chat.whatsapp.com/Gcv1rlofnHhBoOG3nmC3Oz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-primary transition-all duration-300 cursor-pointer group"
+                >
+                  <span className="text-lg mr-3 group-hover:scale-110 transition-transform">💬</span>
+                  WhatsApp Community
+                </a>
+              </li>
+              <li className="flex items-center text-muted-foreground">
                 <span className="text-lg mr-3">📍</span>
-                Rochester Institute of Technology
+                Ramaiah Institute of Technology
               </li>
             </ul>
           </div>
