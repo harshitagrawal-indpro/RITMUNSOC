@@ -16,9 +16,11 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="reveal-scale">
           <div className="relative inline-block mb-8">
-            <div className="h-40 w-40 mx-auto bg-gradient-to-br from-munsoc-teal-500 to-munsoc-gold-500 rounded-full flex items-center justify-center text-6xl font-bold text-white shadow-2xl glow float">
-              🏛️
-            </div>
+            <img 
+              src="https://i.ibb.co/wZs4SvXB/28e42789-83a6-4394-b5a3-83204b5afde8-png.png" 
+              alt="MUNSOC RIT Logo" 
+              className="h-40 w-40 mx-auto glow float"
+            />
             <div className="absolute inset-0 bg-gradient-to-br from-munsoc-teal-400 to-munsoc-gold-400 rounded-full opacity-20 blur-xl"></div>
           </div>
           

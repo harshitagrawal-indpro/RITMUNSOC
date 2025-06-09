@@ -12,9 +12,11 @@ export function Footer() {
           <div className="col-span-2 reveal-up stagger-1">
             <div className="flex items-center space-x-4 mb-6">
               <div className="relative">
-                <div className="h-12 w-12 bg-gradient-to-br from-munsoc-teal-500 to-munsoc-gold-500 rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-lg float">
-                  🏛️
-                </div>
+                <img 
+                  src="https://i.ibb.co/wZs4SvXB/28e42789-83a6-4394-b5a3-83204b5afde8-png.png" 
+                  alt="MUNSOC RIT Logo" 
+                  className="h-12 w-12 float"
+                />
                 <div className="absolute inset-0 bg-gradient-to-br from-munsoc-teal-400 to-munsoc-gold-400 rounded-full opacity-20 blur-lg"></div>
               </div>
               <span className="text-2xl font-bold munsoc-text-gradient">MUNSOC RIT</span>
